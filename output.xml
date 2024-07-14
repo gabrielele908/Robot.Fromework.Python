@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.1 on win32)" generated="2024-07-05T23:34:01.673787" rpa="false" schemaversion="5">
+<suite id="s1" name="Registration Test" source="C:\Users\user\Downloads\robotDemo\RobotFrameworkProject\RobotFrameworkProject\registration_test.robot">
+<test id="s1-t1" name="Registration form test" line="11">
+<kw name="Filling Registration form" owner="commons">
+<kw name="launching browser" owner="commons">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-05T23:34:01.962184" level="INFO">Opening browser 'chrome' to base url 'https://www.way2automation.com/way2auto_jquery/index.php'.</msg>
+<arg>${url}</arg>
+<arg>${browserName}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-05T23:34:01.962184" elapsed="10.954971"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-05T23:34:12.917155" elapsed="0.003451"/>
+</kw>
+<kw name="Log Title" owner="SeleniumLibrary">
+<msg time="2024-07-05T23:34:12.929699" level="INFO">Welcome to the Test Site</msg>
+<doc>Logs and returns the title of the current page.</doc>
+<status status="PASS" start="2024-07-05T23:34:12.920606" elapsed="0.009093"/>
+</kw>
+<arg>https://www.way2automation.com/way2auto_jquery/index.php</arg>
+<arg>chrome</arg>
+<status status="PASS" start="2024-07-05T23:34:01.960372" elapsed="10.969327"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-05T23:34:12.930702" elapsed="0.093200"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-05T23:34:13.034612" level="FAIL">Variable '${name}' not found. Did you mean:
+    ${TEST_NAME}</msg>
+<arg>${name}</arg>
+<arg>Rahul Arora</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-07-05T23:34:13.028706" elapsed="0.005906">Variable '${name}' not found. Did you mean:
+    ${TEST_NAME}</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${phone}</arg>
+<arg>8923848274</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-05T23:34:13.035593" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<var>${random}</var>
+<arg>random.randint(5000,999999)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-07-05T23:34:13.035593" elapsed="0.000000"/>
+</kw>
+<kw name="Catenate" owner="BuiltIn">
+<var>${emailnew}</var>
+<arg>${random}</arg>
+<arg>__2_ @way2automation.com</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" start="2024-07-05T23:34:13.036093" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<var>${email_id}</var>
+<arg>'${emailnew}'.replace(' ','_')</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-07-05T23:34:13.036093" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${email}</arg>
+<arg>${email_id}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-05T23:34:13.036593" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>${country}</arg>
+<arg>Iceland</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2024-07-05T23:34:13.037097" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${city}</arg>
+<arg>Delhi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-05T23:34:13.037097" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${username}</arg>
+<arg>rahularora1423</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-05T23:34:13.037621" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${password}</arg>
+<arg>askjdbfskjdfs</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-05T23:34:13.038095" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${submitBtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-05T23:34:13.038095" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-07-05T23:34:01.960372" elapsed="11.078224">Variable '${name}' not found. Did you mean:
+    ${TEST_NAME}</status>
+</kw>
+<kw name="Finish Test Case" owner="commons">
+<status status="NOT RUN" start="2024-07-05T23:34:13.040066" elapsed="0.000452"/>
+</kw>
+<status status="FAIL" start="2024-07-05T23:34:01.959399" elapsed="11.082111">Variable '${name}' not found. Did you mean:
+    ${TEST_NAME}</status>
+</test>
+<status status="FAIL" start="2024-07-05T23:34:01.675305" elapsed="11.369494"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Registration Test">Registration Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
